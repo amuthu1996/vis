@@ -1,0 +1,21 @@
+html,body{
+  width: 100%;
+}
+
+.image{
+  width: 95%;
+  border: 2px black solid;
+  padding: 5px;
+  margin: 2.5%;
+}
+
+form{
+  background-color: #efefef;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.but{
+    margin-top: 20px;
+}

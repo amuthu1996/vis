@@ -4,50 +4,17 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-
-      var fileDisplayArea = document.getElementById('output');
-      function readTextFile(file)
-      {
-          var rawFile = new XMLHttpRequest();
-          rawFile.open("GET", file, false);
-          rawFile.onreadystatechange = function ()
-          {
-              if(rawFile.readyState === 4)
-              {
-                  if(rawFile.status === 200 || rawFile.status == 0)
-                  {
-                      var allText = rawFile.responseText;
-                      fileDisplayArea.innerText = allText
-                  }
-              }
-          }
-          rawFile.send(null);
-      }
-
-      readTextFile("file:///home/muthu/apps/js/ui/twitter.txt");
-
-    </script>
-    <script>
-      var openFile = function(event) {
-        var input = event.target;
-        document.getElementById('file').innerText = input;
-        var reader = new FileReader();
-        reader.onload = function(){
-          var text = reader.result;
-          var node = document.getElementById('output');
-          node.innerText = text;
-          console.log(reader.result.substring(0, 200));
-        };
-        reader.readAsText("file:///home/muthu/apps/js/ui/twitter.txt");
-      };
-      openFile("file:///home/muthu/apps/js/ui/twitter.txt");
-    </script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-inverse">
      <div class="container-fluid">
        <div class="navbar-header">
@@ -72,10 +39,25 @@
        </div>
      </div>
     </nav>
-    <br>
-    <br>
-    <input type='file' accept='text/plain' onchange='openFile(event)'><br>
-    <div id='output'></div>
-    <div id='file'></div>
+
+    <div class="jumbotron">
+      <center><h1>Visualization</h1></center>
+    </div>
+    <div class="container">
+      <form>
+        <span>Select the article</span>
+         <div w3-include-html="options.html"></div>
+        <input type="button" class='but btn btn-primary form-control' value="Submit"></input>
+      </form>
+    </div>
+      <img class="image" src=''></img>
+    <div class="container">
+      <div class="article"></div>
+    </div>
+    <div class="output"></div>
+
+    </div>
   </body>
+
+
 </html>
