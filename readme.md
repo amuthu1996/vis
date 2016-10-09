@@ -1,5 +1,5 @@
-put the articles and images inside their respective folders
+put the articles and pckl files inside their respective folders
 
-run list.py
+run list.py, tree_parser.py
 
 open index.html in browser

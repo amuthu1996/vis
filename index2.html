@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visualization</title>
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+      
+      <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      />
+      <!-- custom stylesheets -->
+      <link 
+        rel="stylesheet"
+        href="css/style.css"
+      />
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="js/script.js"></script>
+      <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+      </script>
+      <script 
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+      </script>
+      <!-- for including a html within html -->
+      <script 
+        src="http://www.w3schools.com/lib/w3data.js">
+      </script>
+      <!-- load the d3.js library --> 
+      <script 
+        src="http://d3js.org/d3.v3.min.js">
+      </script>
+
+      <!-- custom scripts -->
+      <script 
+        src="js/script.js">
+      </script>
   </head>
+
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-inverse">
@@ -41,24 +64,22 @@
      </div>
     </nav>
 
-    <div class="jumbotron">
-      <center><h1>Visualization</h1></center>
-    </div>
     <div class="container">
       <form>
-        <span>Select the article</span>
-         <div w3-include-html="options.html"></div>
-         <div w3-include-html="sets.html"></div>
-        <input type="button" class='but btn btn-primary form-control' value="Submit"></input>
+          <span>Select the article</span>
+          <div w3-include-html="options.html"></div>
+          <div w3-include-html="sets.html"></div>
+          <input type="button" class="but btn btn-primary form-control" value="Submit"></input>
 
       </form>
     </div>
-      <img class="image" src=''></img>
+
+    <!-- custom scripts -->
+    <script 
+        src="js/script.js">
+    </script>
     <div class="container">
       <div class="article"></div>
     </div>
-    <div class="output"></div>
   </body>
-
-
 </html>

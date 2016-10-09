@@ -1,3 +1,5 @@
+/** general styling **/
+
 html,body{
   width: 100%;
 }
@@ -18,4 +20,21 @@ form{
 
 .but{
     margin-top: 20px;
+}
+
+
+/** tree **/
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
 }
