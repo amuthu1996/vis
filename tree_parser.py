@@ -50,7 +50,7 @@ for set_item in setList:
         with open(treeDir + set_item + '/' + file_item,'rb') as f:
             #print f.read()
             json_item = pickle.load(f)
-            with open(jsonDir + set_item + '/' + file_item[:-8] + 'json','w+') as jsonFile:
+            with open(jsonDir + set_item + '/' + file_item[:-8].replace(' ','_') + 'json','w+') as jsonFile:
                 jsonFile.write(convert_json(json_item))
 
 
